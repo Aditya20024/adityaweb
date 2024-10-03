@@ -3,6 +3,9 @@
 <head>
 <title>PhotoShow</title>
 </head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!--
 icon size:16*16 or 32*32 or 64*64
 -->
@@ -16,8 +19,33 @@ margin:40px;
 box-shadow:10px 10px 10px gray;
 }
 
+/*extra small devices {phone,600px and down) */
+
+@media only screen and (max-width:600px)
+
+  {
+   body{background:yellow;text-align:center;}
+    .pic{
+         margin:5px;
+          width:100%;
+                      }
+
+/* small devices (protrait tablets and large phone,600px and up)*/
+@media only screen and (min-width:600px)
+{
+        body{background:red;}
+        .pic{
+            margin:5px;   
+            width:40%;
+                          }
+
+
+
+
+
 </style>
 <body>
+
 <div style="text-align:left;">
 <a href="practicework.html">
 <img src="image/back.png" width="3%">
