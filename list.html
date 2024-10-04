@@ -2,14 +2,52 @@
 <html>
 <head>
 <title>list</title>
+
+<div style="text-align:left;">
+<a href="practiceWork.html">
+<img src="image/back.png" width="3%">
+</a>
+
+</div>
 <h1 style="color:greenyellow;text-align:center"><div style="font-family:arial black;
 font-size:100px;text-shadow:5px 5px 5px gray">LIST</div> <div style="text-shadow:
 2px 2px 2px gray">IN HTML</div> </h1>
 </head>
 <style>
 
+#col,#col2
+{
+border:5px greenyellow solid;
+width:20%;
+height:600px;
+//overflow:hidden;
+//overflow:scroll;
+overflow:auto;
+box-shadow:10px 10px 10px gray;
+padding-left:20px;
+float:left;
+
+}
+
+#col2
+{
+float:right;
+box-shadow:-10px 10px 10px gray;
+
+}
+#col2 ul li
+{
+list-style:none;
+margin-left:-10px;
+list-style-image:url(image/wolf.png)
+
+
+}
+
+
 </style>
 <body>
+<div id="col">
 <h2>ORDER LIST </h2>
 <ol>
 <li><a href="#">HOME</a></li>
@@ -75,6 +113,27 @@ font-size:100px;text-shadow:5px 5px 5px gray">LIST</div> <div style="text-shadow
 <li><a href="#">SERVICES</a></li>
 <li><a href="#">ABOUT</a></li>
 </ul>
+</div>
+
+
+<div id="col2">
+<h2>custom list </h2>
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">PRODUCT</a></li>
+<li><a href="#">SERVICES</a></li>
+<li><a href="#">ABOUT</a></li>
+</ul>
+
+<ul>
+<li><a href="#">HOME</a></li>
+<li><a href="#">PRODUCT</a></li>
+<li><a href="#">SERVICES</a></li>
+<li><a href="#">ABOUT</a></li>
+</ul>
+
+</div>
+
 </body>
 
 
