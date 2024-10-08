@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<title>List</title>
+<h1 style="color:greenyellow;text-align:center"><div style="font-family:arial black;
+font-size:100px;text-shadow:5px 5px 5px gray">MENU</div> <div style="text-shadow:
+2px 2px 2px gray">IN HTML</div> </h1>
+
+</head>
+
+<style>
+
+body
+{
+margin:0px;
+padding:0px;
+}
+
+
+
+nav ol li
+{
+list-style:none;
+background:greenyellow;
+//display:inline-block;
+width:110px;
+padding:20px;
+font-size:25px;
+cursor:pointer;
+box-shadow:10px 10px 10px gray;
+border-bottom:3px  white  solid;
+
+}
+
+nav ol li:hover
+{
+background:#46b448;
+}
+
+
+nav ol li a:link
+{
+text-decoration:none;
+color:white;
+padding:5px;
+
+}
+
+nav ol li a:visited
+{
+text-decoration:none;
+color:DarkSlateBlue;
+
+}
+
+
+
+#sub
+{
+position:absolute;
+left:155px;
+display:none;
+}
+
+#product:hover #sub
+{
+display:block;
+
+}
+
+
+</style>
+
+<body>
+
+
+
+<nav>
+<ol>
+<li><a href="#">HOME</a></li>
+<li id="product"><a href="#">PRODUCT</a>
+   <ol id="sub">
+    <li><a href="#">food</a></li>
+    <li><a href="#">clothes</a></li>
+    <li><a href="#">toys</a></li>
+
+</ol>         
+
+
+</li>
+
+<li><a href="#">SERVICES</a></li>
+<li><a href="#">ABOUT</a></li>
+</ol>
+</nav>
+
+
+</body>
+
+
+
+</html>
