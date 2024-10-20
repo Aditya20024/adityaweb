@@ -18,11 +18,34 @@
 </div>
 </head>
 <style>
+@keyframes fadout
+{
+from{opacity:0;}
+to{opacty:1;}
+}
 
+@keyframes ani
+{
+from{transform:scale(3)}
+to{transform:scale(1)}
+}
+
+p{
+animation:fadout 3s ease-in;
+}
+
+body
+{
+animation:ani 1s ease-in-out;
+}
 
 </style>
+
+
+
+
 <div style="margin:20px">
-<body bgColor="white">
+<body  id="ani" bgColor="white">
 <p>
 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
 standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make 
