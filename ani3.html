@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<title>Ani2</title>
+</head>
+<style>
+
+@keyframes ani1
+{
+from{margin-left:1000px;}
+to{margin-left:-6800px;}
+}
+
+@keyframes ani2
+{
+20%{color:red;}
+40%{color:green;background:yellow;}
+60%{color:blue;background:red;}
+80%{color:magenta:background:black;}
+100%{color:teal;}
+}
+
+#news
+{
+background:black;
+color:white;
+font-size:50px;
+width:8000px;
+box-shadow:10px 10px 10px gray;
+padding:10px;
+text-transform:uppercase;
+font-family:arial black;
+margin-left:10px;
+animation:ani2 16s infinite linear;
+overflow:hidden;
+}
+
+
+#text
+{
+margin-left:10px;
+animation:ani1 20s infinite linear;
+}
+</style>
+
+<body>
+<h1 style="text-align:center; color:greenyellow;">Keyframes animation</h1>
+<h2>Srolling text</h2>
+<div id="news">
+<span id="text">
+It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more
+</span>
+</div>
+
+
+</body>
+
+
+</html>
