@@ -74,7 +74,7 @@ margin:2px;
 }
 article
 {
-width:78%;
+width:100%;
 //height:200px;
 padding:30px;
 text-align:justify;
@@ -83,6 +83,7 @@ text-align:justify;
 article p
 {
 font-family:impact;
+
 }
 
 aside{
@@ -139,6 +140,7 @@ img{max-width:50%;}
     header{height:200px; display:none; }
     header img{height:100%;  }
 
+
  nav
 {
 background:yellow;
@@ -149,6 +151,7 @@ nav ol li
 {
 list-style:none;
 //background:red;
+//height:400px;
 display:block;;
 margin-left:-40px;
 padding:20px;
@@ -172,6 +175,11 @@ aside{
 display:none;
 }
 
+footer
+{
+flex-direction:column;
+}
+
 }
 
 
@@ -190,7 +198,7 @@ display:none;
 {
 background:yellow;
 width:100%;
-text-align:left;
+text-align:center;;
 margin-left:-40px;
 }
  nav ol li
@@ -222,6 +230,11 @@ nav ol li
 text-align:center;
 }
 
+footer
+{
+flex-direction:row;
+}
+
 }
 
 
@@ -249,28 +262,22 @@ text-align:center;
 <body>
 
 <header>
-<img src="image/n2.jpg">
+<img src="image/n3.jpg">
 </header>
 
 <nav>
 <ol>
-<li><a href="index.html">Home</a></li>
-<li><a href="photoshow.html">photoshow</a></li>
+<li><a href="layout3.html">Home</a></li>
+<li><a href="about.html">About us</a></li>
 <li><a href="list.html">list in html</a></li>
 <li><a href="div.html">Div</a></li>
 <li><a href="div2.html">Div2</a></li>
 </ol>
 </nav>
-<div id="main">
-<div id="left">
-<img src="image/a1.jpg">
-<img src="image/a1.jpg">
-<img src="image/a1.jpg">
-<img src="image/a1.jpg">
 
-</div>
 <article>
 <u>
+<h1 style="color:red; font-family:impact;">About us</h1>
 <h2 style="color:blue; font-family:impact;">Yamaha</h2>
 </u>
 <p>
@@ -297,9 +304,6 @@ Yamaha Motor Research & Development India Pvt. Ltd. (YMRI) is a 100% subsidiary 
 </p>
 </article>
 <aside>
-<h3>Coming Soon</h3>
-<img src="image/a2.jpg">
-<img src="image/a2.jpg">
 
 </aside>
 
