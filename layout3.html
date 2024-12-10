@@ -9,7 +9,7 @@
 <style>
 div,header,nav,sitemap,copyright,aside,article
 {
-border:1px black solid;
+//border:1px black solid;
 box-sizing:border-box;
 }
 
@@ -188,10 +188,11 @@ display:none;
     header img{height:100%;  }
  nav
 {
-background:yellow;
+background:greenyellow;
 width:100%;
-text-align:left;
-margin-left:-40px;
+text-align:center;
+padding:1px;
+//margin-left:-40px;
 }
  nav ol li
 {
@@ -199,13 +200,24 @@ margin-left:-40px;
 padding:20px;
 //margin-left:-10px;
 text-align:center;
-margin:auto;
+//margin:auto;
 }
 
+#main
+{
+flex-direction:column;
+}
 
+#left{
+display:flex;
+margin-left:180px;
 
+}
 
+aside{
+display:none;
 
+}
 
 }
 
@@ -222,6 +234,10 @@ nav ol li
 text-align:center;
 }
 
+nav{
+
+}
+
 }
 
 
@@ -236,6 +252,22 @@ nav
 text-align:center;
 }
 
+ nav
+{
+background:greenyellow;
+width:100%;
+text-align:center;
+padding:1px;
+//margin-left:-40px;
+}
+ nav ol li
+{
+//background:red;
+padding:20px;
+//margin-left:-10px;
+text-align:center;
+//margin:auto;
+}
 
 }
 
@@ -296,6 +328,7 @@ Yamaha Motor Research & Development India Pvt. Ltd. (YMRI) is a 100% subsidiary 
 
 </p>
 </article>
+
 <aside>
 <h3>Coming Soon</h3>
 <img src="image/a2.jpg">
