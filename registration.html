@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<title>Registration Form</title>
+</head>
+
+<style>
+header{
+text-align:center;
+}
+
+#regform{
+text-align:center;
+width:40%;
+margin:auto;
+border:1px solid black;
+border-radius:10px;
+box-shadow:10px 10px 10px gray;
+}
+
+#regform table{
+margin:auto;
+width:100%;
+}
+
+</style>
+
+<body>
+<header>
+<h1>Registration Form</h1>
+</header>
+
+<div id="regform">
+<table border="0" cellpadding="10">
+
+<form action="http://tatapla/ures/get.php" method="post">
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td><label for="username">User Name</label></td>
+<td><input type="text" id="usernme" placeholder="Type name here" title="Type Name">
+</tr>
+
+<tr>
+<td><label for="password">Password</lbel></td>
+<td><input type="password" id="usernme" placeholder="Type password here" title="Type password">
+</tr>
+
+<tr>
+<td><label for="gender">Gender</label></td>
+<td>
+Male<input type="radio" name="gender" value="Male">
+Female<input type="radio" name="gender" value="Female">
+Other<input type="radio" name="gender" value="Other">
+</td>
+</tr>
+
+<tr>
+<td><label for="Hobby">Hobby</label></td>
+<td>
+Reading<input type="checkbox" value="reading">
+Writing<input type="checkbox" value="Writing">
+Dancing<input type="checkbox" value="Dancing">
+Cooking<input type="checkbox" value="Cooking">
+Sports<input type="checkbox" value="Sports">
+</td>
+</tr>
+
+<tr>
+<td><label for="mail">Mail</label></td>
+<td><input type="email"></td>
+</tr>
+
+<tr>
+<td><label for="message">Message</label></td>
+<td><textarea></textarea></td>
+</tr>
+
+<tr>
+<td><label for="city">City</label></td>
+<td>
+<select>
+<option value="Delhi">Delhi</opyion>
+<option value="Bombay">Bombay</opyion>
+<option value="Calcutta">Calcutta</opyion>
+<option value="Banglore">Banglore</opyion>
+<option value="Abmedabd">Abmedabd</opyion>
+</td>
+</tr>
+
+<tr>
+<td><label for="Date">DOB</label></td>
+<td><input id="Date" type="date"></td>
+</tr>
+
+<tr>
+<td><label for="time">Time</label></td>
+<td><input id="time" type="time"></td>
+</tr>
+
+
+<tr>
+<td><label for="file">Upload File</label></td>
+<td><input id="file" type="file"></td>
+</tr>
+
+<tr>
+<td><label for="mcolor">Select Color</label></td>
+<td><input id="mcolor" type="color"></td>
+</tr>
+
+
+<tr>
+<td></td><td><input type="submit" value="Register"><input type="reset"</td>
+</tr>
+
+
+</form>
+
+</table>
+</div>
+
+</body>
+
+
+</html>
