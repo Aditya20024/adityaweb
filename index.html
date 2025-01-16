@@ -2,90 +2,125 @@
 <html>
 <head><title>Aditya profile</title>
 </head>
+
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 <style>
 header,nav,article
 {
-border:1px black solid;
-box-sizing:border-box;
+//border:1px black solid;
+//box-sizing:border-box;
 }
 
 html{
 scroll-behavior:smooth;
 }
 
-
-
-header{
-width:100%;
-height:650px;
-//background:red;
-background-image:url(image/bann.jpg);
-background-size:cover;
-margin:auto;
+body{
+background:black;s
 }
 
-#main{
-//background:yellow;
-margin-left:880px;
-margin-top:130px;
-font-size:25px;
-color:white;
-text-shadow:5px 5px 5px black;
+header{
+width:10ss0%;
+height:200px;
+//display:flex;
+background-image:url(image/bann.jpg);
+background-size:cover;
+margin-top:30px;
 }
 
 header img{
-width:60%;
-border:5px solid white;
+width:50%;
+margin-top:20px;
+box-shadow:5px 5px 5px white;
 border-radius:50%;
+}
 
+
+#main{
+//display:flex;
+margin-left:300px;
+}
+
+#main h1{
+//background:red;
+font-size:20px;
+color:white;
 }
 
 nav{
-width:44%;
-//background:yellow;
-float:left;
-//display:inline;
-margin-left:710px;
-margin-top:25px;
+//text-align:center;
+//background:black;
+height:40px;
+width:100%;
+margin-top:40px;
 
+//border:4px red solid;
+}
+nav ol li{
+display:inline;
+padding:10px;
+text-align:center;
+border:2px white solid;
+border-radius:20px;
+cursor:pointer;
 }
 
-nav ol li{
+nav ol li:hover{
+box-shadow:5px 5px 10px #FFC300;
+
 //background:red;
-list-style:none;
-display:inline;
-font-size:25px;
-//margin-left:500px;
-padding:10px;
-border:3px solid white;
-border-radius:25px;
-//border:2px solid white;
 }
 
 article{
 width:100%;
-height:600px;
 margin:auto;
+margin-top:50px;
+background:black;
+color:white;
+//border-radius:20px;
+//padding:10px;
+}
+
+article img{
+width:100%;
+
+background:white;
+}
+
+article h1{
 background:yellow;
-background-image:url(image/about2.jpg);
-background-size:cover;
-//text-align:justify;
-margin-top:20px;
+height:30px;
 }
 
 article p{
-//border:2px solid white;
-width:36%;
-height:400px;
-margin-left:770px;
-font-size:35px;
-margin-top:160px;
-color:white;
-overflow:auto;
+//background:red;
+padding:10px;
+font-size:18px;
+color:gray;
+//justify-content:center;
+//justify-content:space-around;
 }
+
+footer{
+background:#FFC300;
+text-align:center;
+}
+
+footer img{
+margin:auto;
+}
+
+.pic{
+width:6%;
+
+}
+
 a:link{color:white;text-decoration:none;}
-a:visited{color:white;}
-a:hover{color:yellow;}
+a:visited{color:white ;}
+a:hover{color:#FFC300 ;}
+
+
 
 
 </style>
@@ -95,14 +130,14 @@ a:hover{color:yellow;}
 <li><a href="index.html">About</a></li>
 <li><a href="practicework.html">PraticeWork</a></li>
 <li><a href="christmas.html">Project</a></li>
-<li><a href="div.html">Div</a></li>
+<li><a href="isro.html">Project2</a></li>
 <li><a href="div2.html">Div2</a></li>
 </ol>
 </nav>
 <header>
 <div id="main">
-<img src="image/adi2.png" width="10%"/></br>
-<h1><u>Aditya Pal<br><span style="color:yellow"> UI-UX DESGINER<span></u></h1>
+<img src="image/adi2.png" ></br>
+<h1><u>Aditya Pal<br><span style="color:#FFC300;"> UI-UX DESGINER<span></u></h1>
 
 </div>
 
@@ -112,13 +147,24 @@ a:hover{color:yellow;}
 
 <article>
 
+<h1 style="text-align:center;background:white;color:#FFC300;padding:10px;">ABOUT ME</h1>
 <p>
-Professional Designer Aditya Pal combines her designing degree with her marketing degree to find the right balance between creativity and commercial sinse. Aditya is an experienced all round UI/UX & Graphic Designer and started her journey as a fresher by end of 2024.
 
-We can checkout her recent works and experiences below. She considers designing and creativity as her passion more than profession.
+Aditya Pal is a skilled and creative UI/UX Designer with a strong passion for crafting intuitive and visually appealing user experiences. With a keen eye for design and a deep understanding of user behavior, Aditya specializes in creating user-centric interfaces that enhance both functionality and aesthetic appeal.
+
+Aditya's design philosophy revolves around simplicity, usability, and accessibility, ensuring that every design solution is not only aesthetically pleasing but also user-friendly. With expertise in wireframing, prototyping, and conducting user research, Aditya is proficient in translating complex ideas into seamless and engaging digital experiences.
+Driven by a commitment to staying updated with the latest design trends and technologies, Aditya continually refines skills to deliver innovative solutions that meet both user needs and business goals. Whether working on web applications, mobile apps, or any digital interface, Aditya strives to create designs that leave a lasting impression while prioritizing usability.
+
 </p>
 </div>
 </article>
 
+<footer>
+<img src="image/a.png" class="pic">
+<img src="image/a2.png" class="pic">
+<img src="image/a3.png" class="pic">
+<img src="image/a4.png" class="pic">
+<img src="image/a5.png" class="pic">
+</footer>
 </body>
 </html>
