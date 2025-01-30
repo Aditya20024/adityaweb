@@ -1,86 +1,121 @@
-<!docctype html>
+<doctype html>
 <html>
-<!--
-pratice work
--->
 <head>
-<title>Practice Work</title>
 </head>
-
 <style>
 
-@keyframes blink
+div,header,nav,sitemap,copyright,aside,article
 {
-from{box-shadow:10px 10px 10px cyan;}
-to{box-shadow:10px 1px 10px magenta;}
+//border:1px white solid;
+//box-sizing:border-box;
 }
 
-body
-{
-//background:white;
+body{
+background:black;
+justify-content: center;
+//margin:auto;
 //text-align:center;
-background-position: center;
 }
 
-
-/* for links */
-#col
+header
 {
-margin:20px;
-border:5px greenyellow solid;
-width:10%;
-height:300px;
-//overflow:hidden;
-//overflow:scroll;
-overflow:auto;
-box-shadow:10px 10px 10px gray;
-padding:40px;
-float:left;
-animation:blink 2s infinite alternate;
-
-}
-
-/* id syte */
-#heading
-{
-width:50%;
-height:50px;
-background:greenyellow;
-box-shadow:10px 10px 10px gray;
 margin:auto;
-color:DarkSlateBlue;
-font-size:35px;
+width:55%;
+//height:300px;
+//background:red;
+}
+
+#text{
+//width:50%;
+height:50px;
+ background:black;
+box-shadow:   0px 5px 0px white;
+border-radius:20px;
+margin:auto;
+color:white;
+font-size:auto;
 text-align:center;
 }
 
-a:link{color:DarkSlateBlue;text-decoration:none;}
-a:visited{color:DarkSlateBlue;}
-a:hover{text-decoration:underline;color:green;}
-a:active{}
 
-ol li
-{
-list-style:none;
+#main{
+//background:red;
+display:flex;
+padding-top:40px;
+
 }
+
+article
+{
+width:50%;
+height:500px;
+overflow:auto;
+border:1px solid white;
+}
+
+article h2{
+text-align:center;
+width:100%;
+}
+
+
+article  li{
+//background:yellow;
+transition:0.50s;
+font-size:large;
+list-style:none;
+text-align:center;
+padding:20px;
+}
+
+aside{
+width:50%;
+height:500px;
+overflow:auto;
+border:1px solid white;
+}
+
+aside h2{
+text-align:center;
+width:100%;
+//background:red;
+background-size:fixed;
+}
+
+aside li{
+font-size:large;
+list-style:none;
+text-align:center;
+padding:20px;
+transition:0.50s;
+}
+
+#main article li:hover{
+background:white;
+transform:scale(1.15);
+}
+
+
+#main aside li:hover{
+background:white;
+transform:scale(1.10);
+}
+
+a:link{color:white;text-decoration:none;}
+a:visited{color:white ;}
+a:hover{color:black ;}
 
 
 
 </style>
 <body>
- <div style="text-align:left;">
-<a href="index.html">
-<img src="image/back.png" width="3%">
-</a>
-<div id="heading">
-Practice Pages
+<header>
+<h1 id="text">Practice Works</h1>
+</header>
 
-</div>
-</div>
-<!--
-list in html
--->
-<div id="col">
-
+<div id="main">
+<article>
+<h2 style="color:white"><u>HTML</u></h2><hr>
 <li><a href="index.html">Home</a></li>
 <li><a href="photoshow.html">photoshow</a></li>
 <li><a href="list.html">list in html</a></li>
@@ -102,15 +137,22 @@ list in html
 <li><a href="isro.html">Isro</a></li>
 
 
+</article>
+<aside>
+<h2 style="color:white"><u>JAVASCRIPT</u></h2><hr>
+<li><a href="index.html">Home</a></li>
+<li><a href="photoshow.html">photoshow</a></li>
+<li><a href="list.html">list in html</a></li>
+<li><a href="div.html">Div</a></li>
+<li><a href="div2.html">Div2</a></li>
+<li><a href="banner.html">Banner</a></li>
+<li><a href="ani3.html">Ani</a></li>
+<li><a href="meta.html">Meta</a></li>
+<li><a href="bookmark.html">BookMark</a></li>
 
 
-
-
+</aside>
 </div>
 
-
 </body>
-
-</head>
-
 </html>

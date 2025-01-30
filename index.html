@@ -21,7 +21,7 @@ background:black;s
 }
 
 header{
-width:10ss0%;
+width:100%;
 height:200px;
 //display:flex;
 background-image:url(image/bann.jpg);
@@ -61,14 +61,14 @@ nav ol li{
 display:inline;
 padding:10px;
 text-align:center;
-border:2px white solid;
-border-radius:20px;
+//border:2px white solid;
+//border-radius:20px;
 cursor:pointer;
 }
 
 nav ol li:hover{
-box-shadow:5px 5px 10px #FFC300;
-
+//box-shadow:5px 5px 10px #FFC300;
+//color:red;
 //background:red;
 }
 
@@ -98,6 +98,7 @@ article p{
 padding:10px;
 font-size:18px;
 color:gray;
+text-align:justify;
 //justify-content:center;
 //justify-content:space-around;
 }
@@ -120,8 +121,111 @@ a:link{color:white;text-decoration:none;}
 a:visited{color:white ;}
 a:hover{color:#FFC300 ;}
 
+/* Extra Small Devices (phones, 600px and down) */
+    @media only screen and (max-width: 600px) {
+      body {
+        //background: blue;
+      }
 
+      header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
 
+      header img {
+        width: 50%;
+        height: auto;
+      }
+nav{text-align:center;}
+      nav ol li {
+        padding:10px;
+        font-size: 14px;
+      }
+      article{
+        //padding:20px;       
+
+      }
+      article p {
+        font-size: 16px;
+        padding:20px;
+text-align:justify;
+      }
+    }
+
+    /* Small Devices (portrait tablets and large phones, 600px and up) */
+    @media only screen and (min-width: 600px) and (max-width: 991px) {
+      body {
+        //background: yellow;
+      }
+       header{
+       width:100%;
+height:400px;
+text-align:center;
+}
+      header img {
+        width: 50%;
+
+      }
+      nav{
+        text-align:center;
+
+     }
+      nav ol li {
+        padding: 10px 12px;
+        font-size: 16px;
+        
+      }
+    }
+
+    /* Large Devices (laptops/desktops, 992px and up) */
+    @media only screen and (min-width: 992px) {
+      body {
+        background: black;
+      }
+       header{
+width:100%;
+height:650px;
+background-size:cover;
+margin:auto;
+
+}
+      header img {
+        width:30%;
+margin-top:80px;
+      }
+#main h1{
+font-size:40px;
+}
+
+#main {
+  width: 72%;
+ //margin-top:80px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-end;
+  align-items: flex-end; 
+}
+
+nav
+{
+text-align:center;
+}
+      nav ol li{
+padding:20px;
+}
+
+footer{
+width:100%;
+}
+
+.pic{
+width:4%;
+padding-right:20px;
+}
+
+    }
 
 </style>
 <body>
@@ -131,7 +235,7 @@ a:hover{color:#FFC300 ;}
 <li><a href="practicework.html">PraticeWork</a></li>
 <li><a href="christmas.html">Project</a></li>
 <li><a href="isro.html">Project2</a></li>
-<li><a href="div2.html">Div2</a></li>
+
 </ol>
 </nav>
 <header>
