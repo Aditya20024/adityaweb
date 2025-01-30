@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating element</title>
+</head>
+<body>
+    <h1 id="topheading"> creating Element (Tag) by js</h1>
+    
+    <style>
+     
+     .pic
+     {
+        margin:40px;
+        border-top:20px ridge yellowgreen;
+        transition:0.50s;
+     }
+
+     .textstyle
+     {
+        width:80%;
+        padding:20px;
+        text-align:center;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+     }
+    </style>
+
+
+
+    
+    <script>
+
+//using already created element y js
+//finding element(tag)
+
+var t = document.getElementById("topheading")
+t.style.color="teal"
+
+t.onmouseover= function()
+{
+    t.style="transition:2s;cursor:pointer;font-size:40px;color:green;"
+    t.innerHTML="Have you learn....!"
+}
+t.onmouseout=function()
+{
+t.style="transition:2s;font-size:30px;color:teal;"
+t.innerHTML="creating element (tag) by js"
+
+}
+
+//Creating element
+
+
+var d = document.createElement("div")
+document.body.appendChild(d)
+
+d.innerHTML ="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+d.style.background="yellow"
+d.style.border="2px black dotted"
+d.className="textstyle"
+
+
+
+var mypic = document.createElement("img")
+document.body.appendChild(mypic)
+mypic.src="image/n3.jpg"
+mypic.style="border-radius:20px;"
+mypic.style="width:70%"
+mypic.style.boxShadow="10px 10px 10px black"
+mypic.style.transform="rotate(-4deg)"
+document.title="aditya"
+mypic.className="pic"
+
+//Event handling
+
+mypic.onmouseover = function()
+{
+mypic.style.transform ="rotate(-4deg)"
+mypic.style.cursor ="pointer"
+}
+
+mypic.onmouseout = function()
+{
+    mypic.style.transform ="rotate(0deg)"
+    mypic.style.cursor ="pointer"
+
+}
+
+mypic.onclick = function()
+{
+    this.style.transform="scale(2)"
+}
+
+
+
+
+    </script>
+</body>
+</html>
