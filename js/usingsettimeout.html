@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #mes{
+        background:rgb(219, 72, 14);
+        height:100px;
+        color:rgb(255, 255, 255);
+        font-size:40px;
+        font-family:arial black;
+        text-align:center;
+        box-shadow:10px 10px 10px gray;
+        margin: 10px;
+        padding:30px;
+        margin-top:10px;
+        padding-top:5px;
+
+    }
+</style>
+
+<body>
+    <div id="mes">
+        News
+    </div>
+    <script>
+var news = ["rump and his envoy for Ukraine and Russia, Keith Kellogg, have said they are working","Martin will be tasked with reversing the fortunes of a bruised and demoralized Democratic Party .","Philadelphia Mayor Cherelle Parker told a press conference that the person who died on the ground .","The child was a girl on her way home with a final destination of Tijuana, "]
+
+//alert(news.length)
+//alert(news[0])
+
+var n = document.getElementById("mes")
+//Recursive function
+var c = -1
+function shownews()
+    {
+       if(c>news.length-2)
+    {
+        c = 0
+    } 
+else
+{
+ c++
+}
+
+n.innerHTML = news[c]
+document.title = c
+
+
+
+setTimeout("shownews()",2000)
+
+    }
+
+    shownews()
+    </script>
+</body>
+</html>
