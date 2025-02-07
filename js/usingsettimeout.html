@@ -9,7 +9,7 @@
 <style>
     #mes{
         background:rgb(219, 72, 14);
-        height:100px;
+        
         color:rgb(255, 255, 255);
         font-size:40px;
         font-family:arial black;
@@ -36,8 +36,31 @@ var news = ["rump and his envoy for Ukraine and Russia, Keith Kellogg, have said
 var n = document.getElementById("mes")
 //Recursive function
 var c = -1
+var r = 124
+var g = 75
+var b = 54
+
 function shownews()
     {
+     r = math.round(manth.random()*255)
+     g = math.round(manth.random()*255)
+     b = math.round(manth.random()*255)
+
+n.style.color ="rgb("+r+","+g+","+b+")"
+
+zoom = (!zoom)?true:false
+
+  if(zoom)
+  {
+n.style.transform="scale(1.10)"
+  }
+  else
+  {
+    n.style.transform="scale(1)"
+  }
+
+
+
        if(c>news.length-2)
     {
         c = 0
@@ -48,7 +71,7 @@ else
 }
 
 n.innerHTML = news[c]
-document.title = c
+//document.title = c
 
 
 
