@@ -1,114 +1,354 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Christmas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas</title>
 </head>
+    <style>
 
-<style>
-@keyframes ani1
+            body {
+           text-align: center;
+                 }
+
+        header {
+            background-color: #B8001F;
+            color: white;
+            padding: 20px;
+//height:100px;
+        }
+
+         header h1 {
+            font-size:40px;
+          //background:yellow;
+        }
+
+        
+       
+
+        .content {
+            padding: 20px;
+            font-size:10px;
+            color: red;
+            //background:red;
+        }
+
+        .pic
 {
-from{margin-left:1000px;}
-to{margin-left:-6800px;}
-}
-
-body{
-background-image:url(image/bk8.jpg);
-//background-repeat:no-repeat;
-background-size:cover;
-overflow:hidden;
-}
-
-
-#main
-{
-//text-align:left;
-//background:yellow;
-padding:2px;
-margin-left:800px;
-//border:1px #B8001F solid;
-//box-sizing:border-box;
-//width:20%;
-
-}
-
-#navhar
-{
-//background:red;
 width:100%;
-height:50px;
-text-align:center;
-margin-top:-50px;
 }
 
 #navhar ol li
 {
-list-style:none;
-padding:12px;
-color:#B8001F;
-background:#E4DEBE;
-width:180px;
 display:inline;
-border:1px solid white;
-border-radius:5px;
+padding:20px;
+background:white;
+border-radius:20px;
+//margin-top:30px;
 }
 
-#navhar hover{
+#navhar
+{
+text-align:center;
+//padding-right:20px;
+}   
+
+#main h1{
+display:flex;
+}
+
+#main2{
+display:flex;
+//margin:auto;
+text-align:center;
+
+padding:40px;
+}
+
+aside
+{
+//border:1px black solid;
+width:35%;
+height:400px;
+}
+
+
+article
+{
+//border:1px black solid;
+width:65%;
+height:400px;
+}
+
+article p
+{
+//background:yellow;
+padding:40px;
+text-align:justify;
+//text-indent:100px;
+font-size:25px;
+}
+     
+.read{
+margin:40px;
+}
+
+.read a{
+background:#B8001F;
+padding:20px;
+color:white;
+border-radius:20px;
+margin-right:10px;
+
+}
+
+.pic3{
+width:80%;
+}
+
+.pic2{
+border:1px black sloid;
+width:35%;
+}
+
+#article2{
+//background:red;
+width:65%;
+//display:flex;
+}
+
+
+#main3{
+display:flex;
+//margin:auto;
+text-align:center;
+padding:40px;
+}
+
+.img{
+//border:1px black solid;
+width:40%;
+border-radius:20px;
+margin:40px;
+}
+
+article h1{
+color:#B8001F; 
+font-size:80px;
+}
+
+article2 h1{
+color:#B8001F; 
+font-size:80px;
+}
+
+#regform{
+//text-align:center;
+width:100%;
+margin:auto;
+background:#B8001F;
+//border:1px solid black;
+//border-radius:10px;
+//box-shadow:10px 10px 10px gray;
+}
+
+#regform table{
+margin:auto;
+width:100%;
 color:white;
 }
+    
+.pic4{
 
-#news
-{
+width:4%;
+padding-right:20px;
 
-background:#E4DEBE;
-color:#B8001F;
-font-size:20px;
-width:8000px;
-box-shadow:10px 10px 10px gray;
-padding:10px;
-//text-transform:uppercase;
-font-family:arial black;
-margin-top:430px;
-overflow:hiddin;
 }
 
-#text
-{
-margin-left:10px;
-animation:ani1 20s infinite linear;
+footer{
+background:gray;
 }
 
-a:visited{color:#B8001F;}
-a:hover{color:#B8001F;}
+
+#chris{
+text-align=center;}
+        
+
+
+/* Extra Small Devices (phones, 600px and down) */
+   @media only screen and (max-width: 600px) {
+    header h1 {
+        font-size: 30px; /* Adjust heading size for smaller screens */
+    }
+
+#navhar ol li
+{
+font-size:10px;
+padding:15px;
+}
+
+    #main h1 {
+        font-size: 24px; 
+    }
+    article h1{
+        font-size:30px;
+    }
+aside {
+width:100%;
+flex-direction:none;
+}
+article{
+width:100%;
+flex-direction:none;
+}
+    article p {
+        font-size: 16px; 
+        padding: 10px;
+    }
+
+    .read a {
+        padding: 10px; 
+        font-size: 14px;
+marign:20px;
+    }
+
+.img{
+width:70%;
+}
+}
 
 </style>
 
 <body>
-<h1 style="color:#E4DEBE;margin-left:30px;font-size:40px;">Christmas</h1>
+    <header>
+       
 <div id="main">
-
-<div id="navhar">
+  <h1 id="chris">Christmas</h1>
+<span id="navhar">
 <ol>
 <li class="mystyle"><a href="christmasabout.html">About</a></li>
-<li class="mystyle"><a href="list2.html">Photos</a></li>
+<li class="mystyle"><a href="#">Photos</a></li>
 <li class="mystyle"><a href="shop.html">Shopping</a></li>
-<li class="mystyle"><a href="registration.html">Content Us</a></li>
+<li class="mystyle"><a href="#">Content Us</a></li>
 
 </ol>
-</div>
-
-</div>
-
-
-</div>
-
-
-<div id="news">
-<span id="text">
-MerryChristmas&nbsp;&nbsp;&nbsp; MerryChristmas&nbsp;&nbsp;&nbsp; MerryChristmas&nbsp;&nbsp;&nbsp; MerryChristmas&nbsp;&nbsp;&nbsp; MerryChristmas&nbsp;&nbsp;&nbsp; MerryChristmas&nbsp;&nbsp;&nbsp; MerryChristmas&nbsp;&nbsp;&nbsp; MerryChristmas&nbsp;&nbsp;&nbsp; MerryChristmas&nbsp;&nbsp;&nbsp; MerryChristmas&nbsp;&nbsp;&nbsp; MerryChristmas&nbsp;&nbsp;&nbsp; MerryChristmas&nbsp;&nbsp;&nbsp; MerryChristmas &nbsp;&nbsp;&nbsp;MerryChristmas&nbsp;&nbsp;&nbsp; MerryChristmas&nbsp;&nbsp;&nbsp; MerryChristmas&nbsp;&nbsp;&nbsp; MerryChristmas&nbsp;&nbsp;&nbsp; MerryChristmas
 </span>
-</div
 
+</div>
+    </header>
+
+    <div>
+<img src="image/chris.jpg" class="pic">
+</div>
+
+<div id="main2">
+<aside>
+<img src="image/sss.png" class="pic">
+</aside>
+<article>
+<h1>Harry Mike Wishes</h1>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+</p>
+<article>
+</div>
+
+<div class="read">
+<a href="#"> See More </a>
+</div>   
+
+    
+<div id="main3">
+<article id="article2">
+<h1>About Christmas</h1>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+</p>
+</article>
+<div class="pic2">
+<img src="image/ssss.png" class="pic">
+</div>
+</div>
+
+<div class="read">
+<a href="#"> See More</a>
+</div>   
+
+
+
+
+<div id="main2">
+<aside>
+<img src="image/sssss.png" class="pic3">
+</aside>
+<article>
+<h1>Christmas Gifts</h1>
+<p>
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book
+</p>
+<article>
+</div>
+
+<div class="read">
+<a href="#"> See More</a>
+</div>   
+
+<div >
+<img src="image/c1.jpg" class="img">
+<img src="image/c2.jpg" class="img">
+<img src="image/c3.jpg" class="img">
+<img src="image/c4.jpg" class="img">
+</div>
+<div class="read">
+<a href="#"> See More</a>
+</div>  
+
+<div id="regform">
+<table border="0" cellpadding="10">
+
+<form action="http://tatapla/ures/get.php" method="post">
+
+<tr>
+<td></td>
+</tr>
+
+<tr>
+<td><label for="username">User Name</label></td>
+<td><input type="text" id="usernme" placeholder="Type name here" title="Type Name">
+</tr>
+
+<tr>
+<td><label for="password">Password</lbel></td>
+<td><input type="password" id="usernme" placeholder="Type password here" title="Type password">
+</tr>
+
+<tr>
+<td><label for="email">email</label></td>
+<td><input type="text" id="email" placeholder="Type email" title="Type email">
+</tr>
+
+
+<tr>
+<td><label for="message">Message</label></td>
+<td><textarea></textarea></td>
+</tr>
+
+<tr>
+<td></td><td><input type="submit" value="submit"><input type="reset"</td>
+</tr>
+</table>
+</form>
+</div>
+
+<footer>
+<h2>contact me</h2>
+<p>--adii--13</p>
+<img src="image/a.png" class="pic4">
+<img src="image/a2.png" class="pic4">
+<img src="image/a3.png" class="pic4">
+<img src="image/a4.png" class="pic4">
+<img src="image/a5.png" class="pic4">
+</footer>
 </body>
-
-
 </html>
