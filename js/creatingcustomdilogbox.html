@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .mybox
+    {
+        width:30%;
+        border:1px solid black;
+        box-shadow:10px 10px 10px gray;
+        margin:auto;
+        padding:10px;
+        font-size:30px;
+        color:red;
+        font-family:Arial, Helvetica, sans-serif;
+        position:absolute;
+        transition: 0.50s;
+        left:25%;
+        top:25%;
+        transform:scale(1.50)
+
+    }
+</style>
+<body>
+    <h1>Creating custom dilog box</h1>
+    <script>
+        var box = document.createElement("div")
+
+        document.body.appendChild(box)
+        box.className="mybox"
+        box.innerHTML="<u>Sale on Amazone</u><button id=,closebutton'>"
+        box.innerHTML+="<hr style='color:green'/>"
+        box.innerHTML+="<img style='width:100%' src='image/g3.gif'>"
+
+        var b=document.getElementById("closebutton")
+        b.onclick = function()
+        {
+            //box.style.transform = "scale(0) rotate(360deg)"
+              box.style.opacity="0"
+            //document.body.removeChild(box)
+        }
+    </script>
+
+</body>
+</html>
