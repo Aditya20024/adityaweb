@@ -12,39 +12,109 @@ div,header,nav,sitemap,copyright,aside,article
 
 
 body{
-
-
 width:100%;
 }
 
+#link{
+width:100%;
+height:40px;
+background:green;
+margin:auto;
+text-align:center;
+padding:20px;
+}
 
+#link a{
+color:white;
+font-size:20px;
+padding:40px;
+
+
+}
 
 nav
 {
 width:100%;
-height:60px;
+height:120px;
+display:flex;
 }
+
+
+nav img
+{
+width:8%;
+
+margin:20px;
+
+}
+
+
+
+#link2
+{
+display:flex;
+width:100%;
+//height:120px;
+}
+
+#link2 h1
+{
+//background:red;
+width:80%;
+height:120px;
+color:green;
+font-size:60px;
+}
+
 
 header{
 width:100%;
 height:600px;
-background-image:url(image/bkground.jpg);
+background-image:url(image/bkground3.jpg);
 background-size:fixed;
 background-size:cover;
 background-repeat: no-repeat;
-filter: blur(8px);
-webkit-filter: blur(8px);
+
+}
+
+
+#head{
+//background:red;
+text-align:center;
+font-size:80px;
+padding-top:270px;
+color:white;
+//text-align:justify;
+
+}
+
+
+#read
+{
+text-align:center;
+color:white;
+}
+
+#read2
+{
+background:yellow;
+height:140px;
+margin-top:50px;
+font-size:100px;
+text-align:center;
+padding:20px;
+font-family:Garamond;
 }
 
 #main{
 width:100%;
 display:flex;
-background:#08991a;
-margin-top:40px;
+//background:#08991a;
+margin-top:180px;
 }
 
 aside{
-width:50%;
+width:60%;
 height:400px;
 margin:50px;
 }
@@ -52,11 +122,12 @@ margin:50px;
 aside img{
 width:100%;
 border-radius:20px;
-box-shadow:10px 10px 10px white;
+box-shadow:10px 10px 10px gray;
+ 
 }
 
 article{
-width:50%;
+width:40%;
 height:400px;
 //display:flex;
 
@@ -66,7 +137,7 @@ margin:50px;
 article h1{
 text-align:center;
 padding:20px;
-color:white;
+//color:white;
 border:3px solid white;
 border-radius:20px;
 }
@@ -75,44 +146,200 @@ article p{
 text-align:justify;
 font-size:18px;
 padding:20px;
-color:white;
+//color:white;
 }
 
 
-footer{
+footer
+{
 width:100%;
-height:200px;
-background:yellow;
+display:flex;
+justify-content:center;
+justify-content:space-around;
+clear:both;
+margin-top:200px;
+background:green;
 }
+
+#copyright
+{
+width:10%;
+height:200px;
+}
+
+#sitemap
+{
+width:60%;
+height:200px;
+}
+
+#socialmedia
+{
+width:20%;
+height:200px;
+}
+
+aside:hover
+{
+//transform: perspective(17px);
+transform:scale(1.10);
+//transform: scale3d(2.5, 1.2, 0.3);
+//transform: skew(30deg, 20deg);
+//transition: width 2s;
+transition: transform 0.5s ease-in-out;
+}
+
+a:link{color:white;text-decoration:none;}
+a:visited{color:white ;}
+a:hover{color:red ;}
+
+
+
+
+
+
 
 </style>
 <body>
+<div id="link">
+<a href="#">Home</a>
+<a href="#">Home</a>
+<a href="#">Home</a>
+<a href="#">Home</a>
+<a href="#">Home</a>
+</div>
+
+
 <nav>
-nav
+<div id="link2">
+<img src="image/logo.jpg">
+<h1>BOTANICAL SURVEY OF INDIA</h1>
+
+
+</div>
+
 </nav>
 
 <header>
-<h1>aditya</h1>
+<h1 id="head"><u>Botanical Garden Of India</u></h1>
+<p id="read">6 Beautiful Gardens in India</p>
 </header>
+
+<div id="read2">Garden Of India</div>
+
+<div style="margin-top:50px;width:60%;margin:auto;">
+<h1 style="text-align:center;color:green;border:2px green solid;border-radius:20px;width:80%;margin:auto;margin-top:80px;">6 Famous Gardens in India that are Worth Exploring</h1>
+<p style="padding:40px;text-align:justify;">A Garden is a place where you can spend some quality time with your loved ones. Its surroundings, natural beauty, aura, atmosphere, and fresh air can make your day. However, a few gardens are above these regular public spaces. They are better than many others in terms of drawing, landscape design, and planning. These gardens are considered tourist spots and people come here to see their beauty. We will be talking about popular gardens in India here and you will need to pick your favorite ones. Therefore, be prepared to make some tough choices among the beautiful gardens in India.
+</p><hr/>
+</div>
+
 
 <div id="main">
 <aside>
 <img src="image/b1.jpg">
 </aside>
 <article>
+<h1> The Botanical Garden Kolkata</h1>
+
+<p>
+The Botanical Garden in Kolkata is among the oldest gardens in India, founded by Robert Kyd in 1787. It stretches over 109 hectares and is protected by the Botanical Survey of India.
+
+The Banyan tree in this garden is very old and very unique. It is more than 330 years old and known as the greatest tree in the world. Nowadays, the place is officially called the Indian Botanic Garden. Due to this garden, tea plants started growing in Assam and Darjeeling.
+</p><hr/>
+</article>
+</div>
+
+<div id="main">
+
+<article>
 <h1> Blue Mountains of Nilgiris</h1>
+
 <p>
 There is an excellent botanical garden in the blue Nilgiri mountains. This government garden is at a height of 2250 to 2500 meters. It is built over a 22-hectare land and is divided into different sections such as a lower garden, a new garden, an Italian garden, a conservatoire, a foundation terrace, and nurseries.
 
 William Graham McIvor designed this park in 1848. There are 127 rare species of shrubbery, hybrid tea roses, Floribunda and Polyanthus, and Arboretums. You will love the garden if you are a fan of exploring rare plants and natural beauty.
-</p>
+</p><hr/>
+</article>
+
+<aside>
+<img src="image/p2.jpg">
+</aside>
+</div>
+
+
+<div id="main">
+<aside>
+<img src="image/p3.jpg">
+</aside>
+<article>
+<h1> Lodhi Garden Delhi</h1>
+
+<p>
+Based in the heart of the capital of our country, the Lodhi Garden is an architectural treasure that was built by the ruler of the Lodhi Dynasty Ala-ud-din Alam Shah. Here you can also visit the tombs of Sayyid and other Lodhi Rulers. There are many tombs here, among which the Bara Gumbad and Shisha Gumbad are the most popular ones. The specialty of this garden is that it is portrayed in both Hindu and Islamic styles despite being built by a Muslim Ruler.
+</p><hr/>
 </article>
 </div>
 
 
+<div id="main">
+
+<article>
+<h1> Hanging Garden Mumbai</h1>
+
+<p>
+Hanging Garden Mumbai is widely known for its grandeur and beauty. Everyone comes here to enjoy the beauty of the impeccable lawns of versatile royal gardens and greenery. Its flora and fauna list it amongst the most beautiful gardens in the world.
+</p><hr/>
+</article>
+
+<aside>
+<img src="image/p4.jpg">
+</aside>
+</div>
+
+
+<div id="main">
+<aside>
+<img src="image/p5.jpg">
+</aside>
+<article>
+<h1> Mehtab Bagh – Agra</h1>
+
+<p>
+Mehtab Bagh is built in the north direction of the 7th wonder of the world, the Taj Mahal. It is established around the famous Char Bagh garden complex, the opposite side of Agra Fort, and the pious river Yamuna.
+
+Mehtab Bagh is different if compared to others as it has four octagonal sandstone towers and a huge octagonal tank in the center. This structure gives a special architectural look.
+
+Apart from that, you can come here to witness the majestic night view of the Taj because in night time Taj’s beauty is clearly visible from here. Nothing can be better than watching the Taj Mahal at night from this garden. No view can ever replace this one. The beauty of the Taj can also be viewed in its reflection into the Yamuna River, flowing in front of the monument.
+</p><hr/>
+</article>
+</div>
+
+
+<div id="main">
+
+<article>
+<h1> Chaubatia Garden, Ranikhet</h1>
+
+<p>
+Hardly people know about Chaubatia garden. This garden is located about 10 km south of Ranikhet in the Almora district of the Indian state Uttarakhand. The garden is based at an altitude of 1,800 meters above sea level.
+
+It is famous for orchards laden. In this park, you will find two hundred varieties of beautiful flowers and fruits. You can also take a walk around to explore the charming 600-acre forest. Its trails are scattered with the Silver Oak, Rhododendron, Cypress, Cedar, and Pine trees. Inside the garden, you will see a cafe where you can sit, relax, eat something, and enjoy the panoramic view of the garden in the backdrop of the Himalayas.
+</p><hr/>
+</article>
+
+<aside>
+<img src="image/p6.jpg">
+</aside>
+</div>
+
+
+
 <footer>
-asdsc
+<div id="copyright">copy</div>
+<div id="sitemap">sitemap</div>
+<div id="socialmedia">social media</div>
 </footer>
+
 
 </body>
 </html>
