@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+.pic
+{
+width:60%;
+margin:auto;
+box-shadow:10px 10px 10px gray;
+border-radius:20%;
+display:block;
+transition:1.50s;
+}
+
+</style>
+<body>
+<h1 style="text-align:center;color:green;font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Scroll Event</h1>
+
+</body>
+
+    <img src="image/i1.png" title="Click To Zoom" alt="nature pic" class="pic" id="pic1">
+<div style="margin-top:400px;"></div>
+    <img src="image/i2.jpg" title="Click To Zoom" alt="nature pic" class="pic" id="pic2">
+
+
+    <div style="margin-top:400px;"></div>
+    <img src="image/i3.jpg" title="Click To Zoom" alt="nature pic" class="pic" id="pic3">
+
+
+    <div style="margin-top:400px;"></div>
+    <img src="image/i4.jpeg" title="Click To Zoom" alt="nature pic" class="pic" id="pic4">
+
+
+    <div style="margin-top:400px;"></div>
+    <img src="image/i5.jpg" title="Click To Zoom" alt="nature pic" class="pic" id="pic5">
+
+
+    <div style="margin-top:400px;"></div>
+    <img src="image/i6.jpg" title="Click To Zoom" alt="nature pic" class="pic" id="pic6">
+    
+    <div style="margin-top:400px;"></div>
+    <div style="margin-top:400px;"></div>
+
+    <script>
+var s = 0
+var i1 = document.getElementById("pic1")
+var i2 = document.getElementById("pic2")
+var i3 = document.getElementById("pic3")
+var i4 = document.getElementById("pic4")
+var i5 = document.getElementById("pic5")
+var i6 = document.getElementById("pic6")
+
+
+window.onscroll = function()
+{
+s = Math.round(window.scrollY)
+if(s>=185)
+{i1.style.transform="scale(0)"}
+if(s<=185)
+{i1.style.transform="scale(1)"}
+
+if(s>=1100)
+{i2.style.transform="scale(0)"}
+if(s<=1100)
+{i2.style.transform="scale(1)"}
+
+if(s>=1900)
+{i3.style.transform="scale(0)"}
+if(s<=1900)
+{i3.style.transform="scale(1)"}
+
+if(s>=2800)
+{i4.style.transform="scale(0)"}
+if(s<=2800)
+{i4.style.transform="scale(1)"}
+
+if(s>=3600)
+{i5.style.transform="scale(0)"}
+if(s<=3600)
+{i5.style.transform="scale(1)"}
+
+if(s>=4500)
+{i6.style.transform="scale(0)"}
+if(s<=4500)
+{i6.style.transform="scale(1)"}
+
+
+document.title = s;
+
+}
+
+
+    </script>
+</body>
+</html>
