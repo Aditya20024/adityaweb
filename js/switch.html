@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#container{
+width:80%;
+margin:auto;
+
+}
+
+#pic{
+    width:100%;
+    height:600px;
+    box-shadow:10px 10px 10px gray;
+    border-radius:20px;
+}
+
+</style>
+
+<body>
+    <div id="container">
+    <h1>Image of the Day<p id="m">Today is:</p></h1>
+    <img id="pic" src="image/n1.jpg">
+</div>
+<script>
+var m = document.getElementById("m")
+var pic=document.getElementById("pic")
+var d =new Date()
+var today =d.getDay()
+//var today=6
+
+switch(today)
+{
+    case 0:
+        m.innerHTML = "Today is:sunday"
+        pic.src="image/n2.jpg"
+        break;
+
+        case 1:
+        m.innerHTML = "Today is:Monday"
+        pic.src="image/n3.jpg"
+        break;
+
+        case 2:
+        m.innerHTML = "Today is:Tuesday"
+        pic.src="image/n1.jpg"
+        break;
+
+        case 3:
+        m.innerHTML = "Today is:Wednesday"
+        pic.src="image/i2.jpg"
+        break;
+        
+        case 4:
+        m.innerHTML = "Today is:Thursday"
+        pic.src="image/i3.jpg"
+        break;
+        
+        case 5:
+        m.innerHTML = "Today is:friday"
+        pic.src="image/i5.jpg"
+        break;
+        
+        case 6:
+        m.innerHTML = "Today is:Saturday"
+        pic.src="image/i6.jpg"
+        break;
+
+        
+
+}
+
+</script>
+
+
+</body>
+</html>
