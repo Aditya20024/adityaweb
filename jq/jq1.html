@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+
+}
+
+#col1{
+text-algin:center;
+border:1px solid black;
+}
+
+#col1 h1{
+    cursor:pointer;
+    background:teal;
+color:white;
+padding:20px;
+box-shadow:10px 10px 10px gray;
+}
+
+</style>
+<body>
+    <h1  id="top" style="font-size:150px;text-algin:center;">Webservices</h1>
+
+    <div id="col1">
+        <h1 id="about">About</h1>
+        <p id="p1">
+            
+            Libero pariatur corporis praesentium molestias est nostrum quaerat ex fugiat, reiciendis reprehenderit tenetur rem voluptatibus. Quam deleniti, fuga hic eos blanditiis vitae incidunt, ipsam necessitatibus, harum praesentium atque veritatis laboriosam!
+            Facere eos, assumenda eveniet quidem odio delectus illo amet vitae eum excepturi beatae, cum iure quis sequi debitis, praesentium iste sapiente? Asperiores provident quo quisquam praesentium quaerat, officia molestias atLibero pariatur corporis praesentium molestias est nostrum quaerat ex fugiat, reiciendis reprehenderit tenetur rem voluptatibus. Quam deleniti, fuga hic eos blanditiis vitae incidunt, ipsam necessitatibus, harum praesentium atque veritatis laboriosam!
+            Facere eos, assumenda eveniet quidem odio delectus illo amet vitae eum excepturi beatae, cum iure quis sequi debitis, praesentium iste sapiente? Asperiores provident quo quisquam praesentium quaerat, officia molestias atLibero pariatur corporis praesentium molestias est nostrum quaerat ex fugiat, reiciendis reprehenderit tenetur rem voluptatibus. Quam deleniti, fuga hic eos blanditiis vitae incidunt, ipsam necessitatibus, harum praesentium atque veritatis laboriosam!
+            Facere eos, assumenda eveniet quidem odio delectus illo amet vitae eum excepturi beatae, cum iure quis sequi debitis, praesentium iste sapiente? Asperiores provident quo quisquam praesentium quaerat, officia molestias at.
+        </p>
+    </div>
+
+    <div id="col1">
+        <h1 id="policy">Policy</h1>
+        <p id="p2">
+            
+            Libero pariatur corporis praesentium molestias est nostrum quaerat ex fugiat, reiciendis reprehenderit tenetur rem voluptatibus. Quam deleniti, fuga hic eos blanditiis vitae incidunt, ipsam necessitatibus, harum praesentium atque veritatis laboriosam!
+            Facere eos, assumenda eveniet quidem odio delectus illo amet vitae eum excepturi beatae, cum iure quis sequi debitis, praesentium iste sapiente? Asperiores provident quo quisquam praesentium quaerat, officia molestias atLibero pariatur corporis praesentium molestias est nostrum quaerat ex fugiat, reiciendis reprehenderit tenetur rem voluptatibus. Quam deleniti, fuga hic eos blanditiis vitae incidunt, ipsam necessitatibus, harum praesentium atque veritatis laboriosam!
+            Facere eos, assumenda eveniet quidem odio delectus illo amet vitae eum excepturi beatae, cum iure quis sequi debitis, praesentium iste sapiente? Asperiores provident quo quisquam praesentium quaerat, officia molestias atLibero pariatur corporis praesentium molestias est nostrum quaerat ex fugiat, reiciendis reprehenderit tenetur rem voluptatibus. Quam deleniti, fuga hic eos blanditiis vitae incidunt, ipsam necessitatibus, harum praesentium atque veritatis laboriosam!
+            Facere eos, assumenda eveniet quidem odio delectus illo amet vitae eum excepturi beatae, cum iure quis sequi debitis, praesentium iste sapiente? Asperiores provident quo quisquam praesentium quaerat, officia molestias at.
+        </p>
+    </div>
+
+    <div id="col1">
+        <h1 id="data">Data</h1>
+        <p id="p3">
+            
+            
+            Libero pariatur corporis praesentium molestias est nostrum quaerat ex fugiat, reiciendis reprehenderit tenetur rem voluptatibus. Quam deleniti, fuga hic eos blanditiis vitae incidunt, ipsam necessitatibus, harum praesentium atque veritatis laboriosam!
+            Facere eos, assumenda eveniet quidem odio delectus illo amet vitae eum excepturi beatae, cum iure quis sequi debitis, praesentium iste sapiente? Asperiores provident quo quisquam praesentium quaerat, officia molestias atLibero pariatur corporis praesentium molestias est nostrum quaerat ex fugiat, reiciendis reprehenderit tenetur rem voluptatibus. Quam deleniti, fuga hic eos blanditiis vitae incidunt, ipsam necessitatibus, harum praesentium atque veritatis laboriosam!
+            Facere eos, assumenda eveniet quidem odio delectus illo amet vitae eum excepturi beatae, cum iure quis sequi debitis, praesentium iste sapiente? Asperiores provident quo quisquam praesentium quaerat, officia molestias atLibero pariatur corporis praesentium molestias est nostrum quaerat ex fugiat, reiciendis reprehenderit tenetur rem voluptatibus. Quam deleniti, fuga hic eos blanditiis vitae incidunt, ipsam necessitatibus, harum praesentium atque veritatis laboriosam!
+            Facere eos, assumenda eveniet quidem odio delectus illo amet vitae eum excepturi beatae, cum iure quis sequi debitis, praesentium iste sapiente? Asperiores provident quo quisquam praesentium quaerat, officia molestias at.
+        </p>
+    </div>
+
+
+    <script>
+
+$(document).ready(function()
+
+{
+$("#p1,#p2,#p3,#top").hide()
+//$("#top").slidedown(2000)
+$("#top").show(2000)
+
+$("#about").click(function()
+{
+    $("#p1").slideToggle(500)
+    $("#top").hide(1000)
+})
+
+$("#policy").click(function()
+{
+    $("#p2").slideToggle(500)
+    $("#top").show(1000)
+})
+
+
+$("#data").click(function()
+{
+    $("#p3").slideToggle(500)
+    $("#top").show(1000)
+})
+
+
+})
+
+    </script>
+</body>
+</html>
