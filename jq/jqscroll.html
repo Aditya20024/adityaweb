@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<style>
+header{
+    width:100%;
+    height:100px;
+    color:yellowgreen;
+    position:fixed;
+margin-bottom:100px;
+text-align:center;
+font-size:50px;
+
+}
+
+.pic{
+    width:50%;
+    margin:100px;
+box-shadow:10px 10px 10px gray;
+cursor:pointer;
+border-radius:20px;
+}
+
+body{
+    text-align:center;
+
+}
+
+.mystyle{
+    position:absolute;
+    top:300px;
+    left:1px;
+    cursor:pointer;
+}
+
+.mystyle:hover{
+    color:green;
+    
+}
+
+</style>
+<body>
+    <header> photoShow</header>
+    
+    <h1>Welcome to web photo gallery</h1>
+    <img src="image/b4.jpg">
+    <img src="image/i2.jpg">
+    <img src="image/i3.jpg">
+    <img src="image/i4.jpeg">
+    <img src="image/i6.jpg">
+
+<script>
+const p = document.getElementsByTagName("img")
+for(var i = 0 ;i<p.length;i++)
+{
+    p[i].className = "pic"
+
+    p[i].onclick =  function()
+    {
+this.className = "pic animate__animated animate__wobble"
+
+    }
+    p[i].onmouseout = function()
+    {
+        this.className = "pic"
+    }
+
+document.title="no"
+}
+
+</script>
+
+</body>
+</html>
