@@ -13,14 +13,20 @@ nav{
     border:1px black solid;
 }
 
+.logo{
+    width:15%;
+}
+
 header{
     width:100%;
-    height:500px;
+    hight:500px;
     border:1px black solid;
+    //border-image:fill 0 linear-gradient(#0003.#000);
 }
 
 .pic{
     width:100%;
+    
 }
 
  .section {
@@ -52,9 +58,44 @@ header{
       background-color: #cd2f17;
     }
 
+
+    #post{
+        width:100%;
+        background:black;
+    }
+
+.movie{
+    width:15%;
+    margin:30px;
+    border-radius:5px;
+transition:0.5s ease;
+cursor:pointer;
+}
+
+#post:hover > :not(:hover){
+    opacity:0.3;
+}
+
+.movie:hover{
+    transform:scale(1.1);
+}
+
+#character2{
+    background:ellow;
+background-image: url(image/bkkk.jpg);
+background:cover;
+
+}
+
 #character{
 width:100%;
-background:red;
+bakground:red;
+display:flex;
+//background-image: url(image/bkkk.jpeg);
+
+ background-size: cover;
+
+
 
 }
 
@@ -65,15 +106,35 @@ background:red;
 }
 
 .char{
-    width:100%;
+    width:80%;
+margin:auto;
+border:px yellow solid;
+
 }
+
+#smm{
+    width:100%;
+    display:flex;
+}
+
+.hero{
+    width:40%;
+    margin:20px;
+}
+
+#peyo{
+
+
+
+}
+
 
 </style>
 
 <body>
     <h1>Smurfs</h1>
 <nav>
-    nav
+    <img src="image/smurfslogo.png" class="logo">
 </nav>
 <header>
 <img src="image/sm2.jpg" class="pic">
@@ -90,29 +151,76 @@ There are more than 100 Smurf characters, and their names are based on adjective
     <button class="register-btn" onclick="registerAlert()">See More...</button>
   </div>
 
-<h1>Characters</h1>
+
+ 
+<div id="post">
+     <h1 style="text-align:center;color:rgb(106, 106, 221);">SMURFS MOVIES </h1>
+<img src="image/m1.jpg" class="movie">
+<img src="image/m2.jpg" class="movie">
+<img src="image/m3.jpg" class="movie">
+<img src="image/m4.jpg" class="movie">
+<img src="image/m5.jpg" class="movie">
+
+</div>
+
+
+<h1 style="text-align:center;">Characters</h1>
+<div id="character2">
 <div id="character">
     <div id="smurfs">
-        <img src="image/sr1.png" class="char">
+        <img src="image/srr1.png" class="char">
     </div>
 
      <div id="smurfs">
-        <img src="image/sr1.png" class="char">
+        <img src="image/srr2.png" class="char">
     </div>
 
      <div id="smurfs">
-        <img src="image/sr1.png" class="char">
+        <img src="image/srr3.png" class="char">
     </div>
 
      <div id="smurfs">
-        <img src="image/sr1.png" class="char">
+        <img src="image/srr4.png" class="char">
     </div>
 
      <div id="smurfs">
-        <img src="image/sr1.png" class="char">
+        <img src="image/srr5.png" class="char">
     </div>
 
 
+</div>
+
+<div id="character">
+    <div id="smurfs">
+        <img src="image/srr6.png" class="char">
+    </div>
+
+     <div id="smurfs">
+        <img src="image/srr7.png" class="char">
+    </div>
+
+     <div id="smurfs">
+        <img src="image/srr8.png" class="char">
+    </div>
+
+     <div id="smurfs">
+        <img src="image/srr9.png" class="char">
+    </div>
+
+     <div id="smurfs">
+        <img src="image/srr10.png" class="char">
+    </div>
+
+
+</div>
+</div>
+
+<div id="smm">
+    <img src="image/mm.jpg" class="hero">
+    <h1 id="peyo">peyo
+    <p style="text-size:1px;">Pierre Culliford (known as Peyo) was born in Brussels on 25 June 1928.
+He started his working life at the age of 15. He began as a cinema projectionist, and then went to work in an animation studio. The studio closed down and Peyo decided to focus on cartoon comic strips. These were published in various daily newspapers, but the early days were difficult.</p>
+    </h1>
 </div>
 
 
