@@ -16,10 +16,12 @@ background:#268499;
 //color:rgb(246, 246, 11);
 text-align:center;
 padding-top:60px;
+font-size:80px;
+padding-bottom:80px;
 }
 
 #hpy{
-    font-size:3rem;
+    font-size:8rem;
     background:url("image/gradient.jpg") center;
     background-size:cover;
     background-clip:text;
@@ -35,12 +37,20 @@ animation:animate 3s linear infinite;
 
 
 #sign{
-width:40%;margin:auto;text-align:center;padding:20px;background:white;border-radius: 20px;box-shadow:0px 5px 5px rgb(5, 4, 4) ;cursor: pointer;
+width:60%;margin:auto;text-align:center;padding:20px;background:white;border-radius: 20px;box-shadow:0px 5px 5px rgb(5, 4, 4) ;cursor: pointer;font-size:70px;
+}
+
+#signup{
+    color:white;text-align: center;
+    cursor: pointer;
+   font-size:50px;
 }
 
 .home{
 width:100%;
 mix-blend-mode: multiply;
+
+margin-top:150px;
 }
 
 a:link{color:#268499;text-decoration:none;}
@@ -52,12 +62,14 @@ a:hover{color:black ;}
      
 <img src="image/homemaid.jpg" class="home">
 
+<div style="margin:250px;"></div>
+
 <h1 id="happy">Welcome to <span id="hpy">'Happy'</span></h1>
 
 <div style="margin-top: 50px;">
   
    <a href="mind2.html"> <h2 id="sign">Sign In</h2>
-<p style="color:white;text-align: center;cursor: pointer;">Sign Up</p></a>
+<p id="signup">Sign Up</p></a>
 </div>
 
 </body>
