@@ -1,0 +1,64 @@
+<doctype html>
+<html>
+<head>
+</head>
+<style>
+
+
+
+    
+
+body{
+background:#268499;
+}
+
+#happy{
+//color:rgb(246, 246, 11);
+text-align:center;
+padding-top:60px;
+}
+
+#hpy{
+    font-size:3rem;
+    background:url("image/gradient.jpg") center;
+    background-size:cover;
+    background-clip:text;
+color:transparent;
+animation:animate 3s linear infinite;
+}
+
+@keyframes animate{
+    to{
+        background-position-x: -500px;
+    }
+}
+
+
+#sign{
+width:40%;margin:auto;text-align:center;padding:20px;background:white;border-radius: 20px;box-shadow:0px 5px 5px rgb(5, 4, 4) ;cursor: pointer;
+}
+
+.home{
+width:100%;
+mix-blend-mode: multiply;
+}
+
+a:link{color:#268499;text-decoration:none;}
+a:visited{color:#268499;}
+a:hover{color:black ;}
+
+</style>
+<body>
+     
+<img src="image/homemaid.jpg" class="home">
+
+<h1 id="happy">Welcome to <span id="hpy">'Happy'</span></h1>
+
+<div style="margin-top: 50px;">
+  
+   <a href="mind2.html"> <h2 id="sign">Sign In</h2>
+<p style="color:white;text-align: center;cursor: pointer;">Sign Up</p></a>
+</div>
+
+</body>
+</html>
