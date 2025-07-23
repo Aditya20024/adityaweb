@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maid App Login</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f2f4f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 15px;
+    }
+
+    .login-box {
+      background: white;
+      padding: 25px 20px;
+      border-radius: 12px;
+      width: 100%;
+      max-width: 360px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .login-box img {
+      width: 70px;
+      margin-bottom: 15px;
+    }
+
+    .login-box h2 {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .login-box label {
+      display: block;
+      text-align: left;
+      font-size: 14px;
+      margin-bottom: 5px;
+      color: #555;
+    }
+
+    .login-box input {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .login-box button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4e73df;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .login-box button:hover {
+      background-color: #3d5ac4;
+    }
+
+    .login-box p {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #777;
+    }
+
+    .login-box p a {
+      color: #4e73df;
+      text-decoration: none;
+    }
+
+    @media (max-width: 400px) {
+      .login-box {
+        padding: 20px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-box">
+    <img src="image/aditya.png" alt="Maid Icon" />
+    
+
+    <form action="#">
+      <label for="email">Phone or Email</label>
+      <input type="text" id="email" placeholder="you@example.com" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter password" required />
+
+      <button type="submit"><a href=profile2.html>Login</a></button>
+      
+    </form>
+
+    <p>Don't have an account? <a href="#">Register</a></p>
+  </div>
+
+</body>
+</html>

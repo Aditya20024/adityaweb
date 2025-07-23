@@ -1,18 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hire Maid - Bottom Nav</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
-  <style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+</head>
+<style>
 
-html
-    {
-    scroll-behavior:smooth;
-    }
-
-    body {
+     body {
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -63,108 +59,7 @@ html
     }
 
 
-    .search-container {
-      width: 100%;
-      max-width: 500px;
-      margin: 0 auto;
-    }
-
-    .search-box {
-      display: flex;
-      align-items: center;
-      background-color: white;
-      border-radius: 10px;
-      padding: 10px 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    .search-box input {
-      flex: 1;
-      border: none;
-      outline: none;
-      font-size: 16px;
-      padding: 8px;
-      background: transparent;
-    }
-
-    .search-box button {
-      background-color: #4e73df;
-      border: none;
-      color: white;
-      padding: 8px 14px;
-      border-radius: 8px;
-      font-size: 14px;
-      cursor: pointer;
-    }
-
-    @media (max-width: 480px) {
-      .search-box {
-        padding: 8px 10px;
-      }
-
-      .search-box button {
-        font-size: 13px;
-        padding: 6px 10px;
-      }
-    }
-
-
-    .maidlogo{
-      width:15%;
-    display:block;
-    margin:0 auto;
-    }
-
-#care{
-//border:1px black solid;
-width:100%;
-//height:120px;
-margin:auto;
-//display:row;
-}
-
-
-.img{
-  width:30%;
-  margin:10px;
-
-}
-
-.img2{
-  width:30%;
-  margin:10px;
-}
-
-#a{
-  width:90%;
-  margin:auto;
-  margin-bottom: 10px;
-//border:1px rgb(151, 38, 38) solid;
-display:flex;
- background: linear-gradient(180deg, #e0eafc, #053d8a);
- border-radius: 10px;
- box-shadow: 0px 10px 10px gray;
- height:120px;
-}
-
-#b{
-  width:90%;
-  margin:auto;
-    margin-bottom: 10px;
-//border:1px rgb(151, 38, 38) solid;
-display:flex;
- background: linear-gradient(180deg, #e0eafc, #b31e72);
- border-radius: 10px;
- box-shadow: 0px 10px 10px gray;
- height:120px;
-}
-
-h3{
-  padding:20px;
-}
-
-
-.container {
+    .container {
       max-width: 400px;
       margin: auto;
      
@@ -245,18 +140,18 @@ h3{
     }
 
 
-
-  </style>
-</head>
+</style>
 <body>
+ 
+   <div class="navbar">
 
-
-  <div class="navbar">
-    
+    <a href="mind3.html">
     <div class="nav-item active" onclick="setActive(this)">
       <i class="fas fa-home"></i>
      
     </div>
+</a>
+
     <div class="nav-item" onclick="setActive(this)">
       <i class="fas fa-search"></i>
       
@@ -274,73 +169,12 @@ h3{
       <i class="fas fa-user-circle"></i>
       </a>
     </div>
-  </div>
-
-<img src="image/maidlogo.png" class="maidlogo">
-
- <div class="search-container">
-    <form class="search-box" action="#" method="get">
-      <input type="text" placeholder="Search,maids,services..." name="query" required />
-      <button type="submit">Search</button>
-    </form>
-  </div>
-
-
-<div id="care">
-  <h1 style="text-align: center;padding-top:20px;">Services</h1>
-
-   <a href="petcare.html">
-<div id="a">
-<img src="image/petcare.png" class="img">
-</a>
-<h3>PETCARE</h3>
-
-
-</div>
-
-   <a href="washing.html">
-<div id="b">
-  
-<img src="image/washing.png" class="img2">
-</a>
-<h3>WASHING</h3>
-</div>
-</div>
-
-
-<div id="care">
-  <a href="cooking.html">
-<div id="a">
-<img src="image/cooking.png" class="img">
-</a>
-<h3>COOKING</h3>
-
-</div>
-<a href="cleaning.html">
-<div id="b">
-<img src="image/cleaning.png" class="img2"></a>
-<h3>CLEANING</h3>
-</div>
-</div>
-
-<div id="care">
-  <a href="babycare.html">
-<div id="a">
-<img src="image/babycare.png" class="img"></a>
-<h3>BABY CARE</h3>
-
-</div>
-
-<a href="eldercare2.html">
-<div id="b">
-<img src="image/elder.png" class="img2"></a>
-<h3>ELDER CARE</h3>
-</div>
-</div>
+  </div> 
 
 
 <div class="container">
   <h2>Available Maids</h2>
+  <h4 style="text-align: center;">For Cooking</h4>
 
   <div class="card">
     <img src="image/maidprofile.png" class="profile-img" alt="maid">
@@ -367,6 +201,18 @@ h3{
   </div>
 
   <div class="card">
+    <img src="image/maidprofileman.png" class="profile-img" alt="maid">
+    <div class="info">
+      <div class="name">piyush </div>
+      <div class="stars">★★★★★</div>
+      <div class="experience">6 yrs experienced</div>
+      <button class="btn" >Book Now</button>
+    </div>
+    <div class="price">4500/month</div>
+  </div>
+
+
+  <div class="card">
     <img src="image/maidprofile.png" class="profile-img" alt="maid">
     <div class="info">
       <div class="name">Kavita Mali </div>
@@ -379,22 +225,42 @@ h3{
     <div class="price">1000/12Hr</div>
   </div>
 
+<div class="card">
+    <img src="image/maidprofile.png" class="profile-img" alt="maid">
+    <div class="info">
+      <div class="name">Seema jha </div>
+      <div class="stars">★★★★★</div>
+      <div class="experience">6 yrs experienced</div>
+      <button class="btn" >Book Now</button>
+    </div>
+    <div class="price">4500/month</div>
+  </div>
+
+  <div class="card">
+    <img src="image/maidprofileman.png" class="profile-img" alt="maid">
+    <div class="info">
+      <div class="name">kunal pal </div>
+      <div class="stars">★★★★★</div>
+      <div class="experience">6 yrs experienced</div>
+      <button class="btn" >Book Now</button>
+    </div>
+    <div class="price">4500/month</div>
+  </div>
+
+  
+
+  <div class="card">
+    <img src="image/maidprofile.png" class="profile-img" alt="maid">
+    <div class="info">
+      <div class="name">abhi jha </div>
+      <div class="stars">★★★★★</div>
+      <div class="experience">4 yrs experienced</div>
+      <button class="btn" >Book Now</button>
+    </div>
+    <div class="price">4500/month</div>
+  </div>
+
 </div>
-
-
-
-
-
-
-  <script>
-
-    function setActive(element) {
-      document.querySelectorAll('.nav-item').forEach(item => {
-        item.classList.remove('active');
-      });
-      element.classList.add('active');
-    }
-  </script>
 
 </body>
 </html>

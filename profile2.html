@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Maid App Owner Dashboard</title>
+  <style>
+
+
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f2f4f7;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 15px;
+    }
+
+    .dashboard {
+      background: white;
+      width: 100%;
+      max-width: 400px;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .dashboard img {
+      width: 80px;
+      margin-bottom: 15px;
+    }
+
+    .dashboard h2 {
+      font-size: 22px;
+      color: #333;
+      margin-bottom: 5px;
+    }
+
+    .dashboard p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 25px;
+    }
+
+    .dashboard .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .dashboard .actions a {
+      text-decoration: none;
+      padding: 12px;
+      background-color: #4e73df;
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .dashboard .actions a.logout {
+      background-color: #dc3545;
+    }
+
+    .dashboard .actions a:hover {
+      filter: brightness(0.95);
+    }
+
+    @media (max-width: 400px) {
+      .dashboard {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+    
+
+  <div class="dashboard">
+    <img src="image/aditya.png" alt="Owner Icon" />
+    <h2>Welcome, Aditya</h2>
+
+
+    <div class="actions">
+    
+      <a href="#">View Bookings</a>
+      <a href="#">Add New Maid</a>
+      <a href="profile.html" class="logout">Logout</a>
+    </div>
+  </div>
+
+</body>
+</html>
